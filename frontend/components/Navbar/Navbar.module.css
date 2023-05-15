@@ -1,0 +1,110 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
+
+
+/* NAVBAR */
+
+.navbar {
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar_links {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+
+/* LOGO */
+
+.logo_div {
+    font-family: 'Foldit', cursive;
+    margin-left: 1em;
+}
+
+.logo_heading {
+    font-size: 5rem;
+    white-space: nowrap;
+}
+
+
+/* LINKS */
+
+.desktop_links {
+    position: absolute;
+    right: 1em;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+}
+
+
+/* EXPANDABLE MENU BUTTON */
+
+.mobile_expandable_button {
+    position: absolute;
+    right: 1em;
+    top: 1rem;
+    color: #ffffff;
+}
+
+.mobile_expandable_button:hover {
+    cursor: pointer;
+    color: grey;
+    transition: color 0.2s ease-in;
+}
+
+
+
+
+.mobile_links {
+    visibility: hidden;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* NAVBAR QUERIES */
+
+@media screen and (max-width:1300px) {
+    .desktop_links {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .logo_heading {
+        font-size: 4rem;
+    }
+
+    .mobile_expandable_button {
+        top: 0.5rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logo_heading {
+        font-size: 3rem;
+    }
+
+    .mobile_expandable_button {
+        top: 0.2rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .visible_when_collapsed {
+        visibility: hidden;
+    }
+}
