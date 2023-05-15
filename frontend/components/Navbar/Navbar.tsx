@@ -35,7 +35,7 @@ const Navbar: React.FC<{}> = () => {
       <div className='nav_links_container'>
         <Link href="/" className={styles.navbar_links}>HOME</Link>
         <Link href="/" className={styles.navbar_links}>EXPLORE</Link>
-        <Link href="/" className={styles.navbar_links}>ABOUT</Link>
+        <Link href="/about" className={styles.navbar_links}>ABOUT</Link>
         <Link href="/" className={styles.navbar_links}>FEEDBACK</Link>
 
         {/* style jsx for dynamic styling - toggling visibility of menu */}

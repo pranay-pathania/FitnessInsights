@@ -1,0 +1,36 @@
+/* IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+/* SECTION ITEM STYLING */
+
+.section_heading {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.section_para {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 650px) {
+    .section_heading{
+        font-size: 2rem;
+    }
+    .section_para{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .section_heading{
+        font-size: 2.5rem;
+    }
+    .section_para{
+        font-size: 1.25rem;
+    }
+}
