@@ -24,7 +24,7 @@ const Navbar: React.FC<{}> = () => {
 
     {/* contains the brand logo */}
     <div className={styles.logo_div}>
-      <p className={styles.logo_heading}>FITNESS INSIGHT</p>
+      <p className={styles.logo_heading}>FITNESS INSIGHTS</p>
     </div>
 
 
