@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { BiMenu } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 
 // NAVBAR component
@@ -14,10 +14,33 @@ const Navbar: React.FC<{}> = () => {
   // controls state of collapsible menu
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
+  // refers to the toggleable menu: nav_links_container
+  const menuRef = useRef<HTMLDivElement>(null)
+
   // toggles menu state on clicking the menu button
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+
+
+  // closes menu when clicking anywhere outside the menu
+  useEffect(() => {
+
+    // this was a problem to implement through TS. needed to change event type from React.MouseEvent to native MouseEvent
+    const clickOutsideMenuHandler = (event: MouseEvent) => {
+      let menu = event.target as HTMLDivElement
+      if(!menuRef.current?.contains(menu)) {
+        setIsMenuOpen(false)
+      }
+    }
+    addEventListener('mousedown', clickOutsideMenuHandler)
+    return () => {
+      removeEventListener('mousedown', clickOutsideMenuHandler)
+    }
+  })
+
+
 
   // component return
   return <nav className={styles.navbar}>
@@ -32,11 +55,11 @@ const Navbar: React.FC<{}> = () => {
     <div className={styles.collapse_menu}>
 
       {/* contains the navigation links */}
-      <div className='nav_links_container'>
-        <Link href="/" className={styles.navbar_links}>HOME</Link>
-        <Link href="/" className={styles.navbar_links}>EXPLORE</Link>
-        <Link href="/about" className={styles.navbar_links}>ABOUT</Link>
-        <Link href="/" className={styles.navbar_links}>FEEDBACK</Link>
+      <div className='nav_links_container' ref={menuRef}>
+        <Link href="/" className={styles.navbar_links} onClick={toggleMenu}>HOME</Link>
+        <Link href="/" className={styles.navbar_links} onClick={toggleMenu}>EXPLORE</Link>
+        <Link href="/about" className={styles.navbar_links} onClick={toggleMenu}>ABOUT</Link>
+        <Link href="/" className={styles.navbar_links} onClick={toggleMenu}>FEEDBACK</Link>
 
         {/* style jsx for dynamic styling - toggling visibility of menu */}
         <style jsx>{`
