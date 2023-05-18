@@ -17,3 +17,34 @@ export const aboutMeSection: AboutInterface = {
     paragraph: "I am not a doctor, nor a trainer. I am the average college student who has made changes to his body following prinicples I learnt throughout my journey to my goal, which was to lose weigth at the time. I got plenty of great advise, I commited plenty mistakes, and through this platform I aim to help anyone willing to undergo a body transformation. I created this platform to have all my knowledge in an easy-to-access place available to all.",
     width_percent: 30
 }
+
+
+
+
+
+
+
+
+// EXPLORE PAGE DATA
+
+
+interface ExploreCardInterface {
+    url: string,
+    paragraph: string
+}
+
+// change paragraphs for all three
+export const muscleBuildingExploreCard: ExploreCardInterface =  {
+    url: '/explore/muscle-building',
+    paragraph: `MuscleGain`
+}
+
+export const fatLossExploreCard: ExploreCardInterface =  {
+    url: '/explore/fat-loss',
+    paragraph: `FatLoss`
+}
+
+export const miscellaneousExploreCard: ExploreCardInterface =  {
+    url: '/explore/miscellaneous',
+    paragraph: `Miscellaneous`
+}

@@ -57,7 +57,7 @@ const Navbar: React.FC<{}> = () => {
       {/* contains the navigation links */}
       <div className='nav_links_container' ref={menuRef}>
         <Link href="/" className={styles.navbar_links} onClick={toggleMenu}>HOME</Link>
-        <Link href="/" className={styles.navbar_links} onClick={toggleMenu}>EXPLORE</Link>
+        <Link href="/explore" className={styles.navbar_links} onClick={toggleMenu}>EXPLORE</Link>
         <Link href="/about" className={styles.navbar_links} onClick={toggleMenu}>ABOUT</Link>
         <Link href="/" className={styles.navbar_links} onClick={toggleMenu}>FEEDBACK</Link>
 

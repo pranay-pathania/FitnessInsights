@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.card_body {
+    width: 80%;
+    /* border: 2px solid green; */
+    border-radius: 30px;
+    box-shadow: 3px 3px #ffffff47;
+}
+
+.image_container {
+    width: 100%;
+    position:relative;
+
+    .image {
+        width: 100%;
+        position: relative !important;
+        object-fit: cover;
+    }
+}
+
+.card_title {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hyperlink {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 850px) {
+    .card_body {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card_body {
+        width: 75%;
+    }
+}
+
+@media screen and (max-height: 560px) {
+    .card_body {
+        margin-top: 7em;
+    }
+}
