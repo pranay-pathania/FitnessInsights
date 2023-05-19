@@ -48,3 +48,10 @@ export const miscellaneousExploreCard: ExploreCardInterface =  {
     url: '/explore/miscellaneous',
     paragraph: `Miscellaneous`
 }
+
+
+
+
+
+// EXPLORE CARD IMAGE SIZING
+export const img_sizes: string = '(max-width: 650px) 64vw, (max-width: 850px) 28.51vw, (max-width: 1350px) 24vw,  320px' 

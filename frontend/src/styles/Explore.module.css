@@ -1,11 +1,9 @@
-
-/* centered with inset: 0; margin: auto; */
 .explore_card_container {
-    /* border: 2px solid red; */
+    /* border: 2px solid red; */   /* FOR DEVELOPMENT ONLY */
     width: 90%;
     max-width: 1200px;
     height: 80vh;
-    position: absolute;
+    position: absolute;  /* centered with position: absolute; inset: 0; margin: auto; */
     inset: 0;
     margin: auto;
     display: flex;
@@ -15,6 +13,9 @@
     padding-left: 2.5em;
     padding-top: 5em;
 }
+
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 850px) {
     .explore_card_container {

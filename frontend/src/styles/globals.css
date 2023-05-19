@@ -1,3 +1,12 @@
+:root {
+  --scroll-bar-width-small: 1vw;
+  --scroll-bar-width-large: 2vw;
+  --scroll-thumb-color-normal: #ffffff38;
+  --scroll-thumb-color-hover: #ffffff59;
+  --scroll-track-color: #000000;
+  --scroll-track-border-radius: 20px;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -6,4 +15,29 @@
 body{
   background: #000000;
   color: #ffffff;
+}
+
+/* SCROLL-BAR STYLING */
+html::-webkit-scrollbar {
+  width: var(--scroll-bar-width-large);  /* for smaller widths */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color-normal);
+  border-radius: var(--scroll-track-border-radius);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-thumb-color-hover);
+}
+
+
+html::-webkit-scrollbar-track {
+  background-color: var(--scroll-track-color);
+}
+
+@media screen and (min-width: 850px) {
+  html::-webkit-scrollbar {
+    width: var(--scroll-bar-width-small);   /* for larger widths */
+  }
 }
