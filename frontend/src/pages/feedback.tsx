@@ -1,5 +1,6 @@
 import FeedbackForm from '../../components/FeedbackForm/FeedbackForm'
 import Head from 'next/head'
+import styles from '../styles/Feedback.module.css'
 
 const Feedback: React.FC<{}> = () => {
     return <>
@@ -9,7 +10,7 @@ const Feedback: React.FC<{}> = () => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div>
+        <div className={styles.body}>
             <FeedbackForm />
         </div>
     </>

@@ -7,19 +7,20 @@
   --scroll-track-border-radius: 20px;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background: #000000;
   color: #ffffff;
 }
 
 /* SCROLL-BAR STYLING */
 html::-webkit-scrollbar {
-  width: var(--scroll-bar-width-large);  /* for smaller widths */
+  width: var(--scroll-bar-width-large);
+  /* for smaller widths */
 }
 
 html::-webkit-scrollbar-thumb {
@@ -38,6 +39,15 @@ html::-webkit-scrollbar-track {
 
 @media screen and (min-width: 850px) {
   html::-webkit-scrollbar {
-    width: var(--scroll-bar-width-small);   /* for larger widths */
+    width: var(--scroll-bar-width-small);
+    /* for larger widths */
   }
+}
+
+
+
+/* removing arrows from input:number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
 }
