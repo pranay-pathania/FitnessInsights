@@ -59,7 +59,7 @@ const Navbar: React.FC<{}> = () => {
         <Link href="/" className={styles.navbar_links} onClick={toggleMenu}>HOME</Link>
         <Link href="/explore" className={styles.navbar_links} onClick={toggleMenu}>EXPLORE</Link>
         <Link href="/about" className={styles.navbar_links} onClick={toggleMenu}>ABOUT</Link>
-        <Link href="/" className={styles.navbar_links} onClick={toggleMenu}>FEEDBACK</Link>
+        <Link href="/feedback" className={styles.navbar_links} onClick={toggleMenu}>FEEDBACK</Link>
 
         {/* style jsx for dynamic styling - toggling visibility of menu */}
         <style jsx>{`

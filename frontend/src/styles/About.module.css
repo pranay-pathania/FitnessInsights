@@ -5,8 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../../public/Images/About-bg.jpg') no-repeat;
+    background: url('../../public/Images/About-bg.jpg');
     background-size: 100vw 100vh;
+    background-attachment: fixed;
     opacity: 0.7;
 }
 
@@ -37,6 +38,7 @@
         display: block;
         padding-top: 5em;
         background: url('../../public/Images/About-bg-mobile.jpg');
+        background-attachment: fixed;
         background-size: 100vw 100vh;
         background-repeat: repeat;
     }
