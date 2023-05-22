@@ -1,7 +1,16 @@
+// IMPORTS 
+
+// import components
 import FeedbackForm from '../../components/FeedbackForm/FeedbackForm'
+
+// import from next/
 import Head from 'next/head'
+
+// stylesheet
 import styles from '../styles/Feedback.module.css'
 
+
+// page
 const Feedback: React.FC<{}> = () => {
     return <>
         <Head>
@@ -11,6 +20,10 @@ const Feedback: React.FC<{}> = () => {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.body}>
+            <div className={styles.headings}>
+                <h1 className={styles.h1}>We're Listening</h1>
+                <h3 className={styles.h3}>Any suggestions, and changes you wish to see? Write to us!</h3>
+            </div>
             <FeedbackForm />
         </div>
     </>

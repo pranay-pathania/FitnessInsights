@@ -61,6 +61,7 @@ export const img_sizes: string = '(max-width: 650px) 64vw, (max-width: 850px) 28
 
 // FEEDBACK PAGE ARRAY OF COUNTRIES
 export const Countries: string[] = [
+    `-- Select Country --`,
     `Afghanistan`,
     `Albania`,
     `Algeria`,
