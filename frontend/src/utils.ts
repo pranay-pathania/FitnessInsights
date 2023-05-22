@@ -1,3 +1,6 @@
+/* ABOUT PAGE */
+
+
 // ABOUT PAGE DATA
 
 export interface AboutInterface {
@@ -22,7 +25,7 @@ export const aboutMeSection: AboutInterface = {
 
 
 
-
+/* EXPLORE PAGE */
 
 
 // EXPLORE PAGE DATA
@@ -57,6 +60,28 @@ export const miscellaneousExploreCard: ExploreCardInterface =  {
 export const img_sizes: string = '(max-width: 650px) 64vw, (max-width: 850px) 28.51vw, (max-width: 1350px) 24vw,  320px' 
 
 
+
+
+
+/* FEEDBACK PAGE */
+
+// feedback form type and state
+export interface FeedbackFormDataInterface {
+    username: string,
+    age: number,
+    country: string,
+    email: string,
+    feedback: string
+}
+
+
+export const feedbackFormInitialState: FeedbackFormDataInterface = {
+    username: '',
+    age: 0,
+    country: '-- Select Country --',
+    email: '',
+    feedback: ''
+}
 
 
 // FEEDBACK PAGE ARRAY OF COUNTRIES
