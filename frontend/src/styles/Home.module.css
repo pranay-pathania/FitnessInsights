@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.body {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+
+.section_three_cards,
+.section_auxillary,
+.section_closing {
+    height: 75vh;
+    width: 100%;
+}
+
+.section_main {
+    height: 85vh;
+    width: 100%;
+}
+
+.section_three_cards {
+    background: #ffffff;
+}
+
+/* .section_auxillary {
+    border: 2px solid yellow;
+} */
+
+.section_closing {
+    background: #ffffff;
+}

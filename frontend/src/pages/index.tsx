@@ -1,7 +1,8 @@
 import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 
 const Home: React.FC<{}> = () => {
-  
+
   return (
     <>
       <Head>
@@ -10,7 +11,23 @@ const Home: React.FC<{}> = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
+      <div className={styles.body}>
+        <section className={styles.section_main}>
+          <h1 className={styles.main_h1}>Empowering Your Fitness Journey with Knowledge</h1>
+          <h3 className={styles.main_h3}>Because fitness is not as complicated as it's made to seem</h3>
+        </section>
+        <section className={styles.section_three_cards}>
+
+        </section>
+        <section className={styles.section_auxillary}>
+
+        </section>
+        <section className={styles.section_closing}>
+
+        </section>
+      </div>
+
     </>
   )
 }
