@@ -7,26 +7,185 @@
 }
 
 
-.section_three_cards,
-.section_auxillary,
 .section_closing {
     height: 75vh;
     width: 100%;
 }
 
+
+
+
+
+/* MAIN SECTION */
+
 .section_main {
-    height: 85vh;
+    height: 100vh;
     width: 100%;
+    background: url('../../public/Images/Home-main-bg.jpg') no-repeat;
+    background-size: cover;
+    opacity: 0.8;
 }
+
+.main_heads {
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3em;
+}
+
+.main_h1 {
+    font-size: 3rem;
+    margin: 0.25em 0em;
+} 
+.main_h3 {
+    font-size: 2rem;
+}
+
+
+
+
+
+
+/* THREE CARD SECTION */
+
 
 .section_three_cards {
+    width: 100%;
     background: #ffffff;
+    display: flex;
+    padding: 6em 0em;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-/* .section_auxillary {
-    border: 2px solid yellow;
-} */
+.card {
+    width: 22%;
+    max-width: 320px;
+    background: #000000;
+    border-radius: 20px;
+    min-height: 50vh;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 5px #000000;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card_p {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+
+
+
+/* AUXILLARY SECTION */
+
+
+.section_auxillary {
+    width: 100%;
+    height: 100vh;
+    background: url('../../public/Images/Home-auxillary-bg.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aux_heads {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3em;
+}
+
+.aux_h1, .aux_h3 {
+    color: #ffffff;
+    text-align: right;
+}
+
+.aux_h1 {
+    font-size: 3rem;
+    margin: 0.25em 0em;
+}
+
+.aux_h3 {
+    font-size: 2rem;
+}
+
+
+
+
+
+
 
 .section_closing {
     background: #ffffff;
+}
+
+
+/* MEDIA QUERIES */
+
+/* section main */
+
+@media screen and (max-width: 800px) {
+    .section_main {
+        background: url('../../public/Images/Home-main-bg-mobile.jpg');
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .section_auxillary {
+        background: url('../../public/Images/Home-auxillary-bg-mobile.jpg');
+        background-size: cover;
+    }
+    .main_heads, .aux_heads {
+        width: 90%;
+        justify-content: flex-end;
+        padding: 0em 1.5em;
+    }
+    .main_h1, .aux_h1 {
+        font-size: 2.5rem;
+    }
+    .main_h3, .aux_h3 {
+        font-size: 1.67rem;
+        margin-bottom: 1.5em;
+    }
+}
+
+
+/* three cards */
+
+@media screen and (max-width: 1110px) {
+    .card_p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 27%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section_three_cards {
+        flex-direction: column;
+        padding: 3em 0em;
+    }
+    .card {
+        width: 60%;
+        margin-bottom: 1em;
+        min-height: 40vh;
+    }
 }

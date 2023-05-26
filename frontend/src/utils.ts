@@ -1,3 +1,33 @@
+/* HOME PAGE */
+
+interface homePageDataInterface {
+    section_main: {
+        heading: string,
+        sub: string
+    },
+    section_three_cards: string[],
+    section_auxillary: {
+        heading: string,
+        sub: string
+    }
+}
+
+export const homePageData: homePageDataInterface = {
+    section_main: {
+        heading: "Empowering Your Fitness Journey with Knowledge",
+        sub: "Because fitness is not as complicated as it's made to seem"
+    },
+    section_three_cards: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    ],
+    section_auxillary: {
+        heading: "Unlock Your Fitness Potential, One Fact at a Time",
+        sub: "As cheesy as it sounds, knowledge is power indeed"
+    }
+}
+
 /* ABOUT PAGE */
 
 

@@ -1,7 +1,10 @@
 import Head from 'next/head'
+import { homePageData } from '@/utils'
 import styles from '../styles/Home.module.css'
 
 const Home: React.FC<{}> = () => {
+
+  const { section_main, section_three_cards, section_auxillary } = homePageData
 
   return (
     <>
@@ -13,19 +16,31 @@ const Home: React.FC<{}> = () => {
       </Head>
 
       <div className={styles.body}>
+
         <section className={styles.section_main}>
-          <h1 className={styles.main_h1}>Empowering Your Fitness Journey with Knowledge</h1>
-          <h3 className={styles.main_h3}>Because fitness is not as complicated as it's made to seem</h3>
+          <div className={styles.main_heads}>
+            <h1 className={styles.main_h1}>{section_main.heading}</h1>
+            <h3 className={styles.main_h3}>{section_main.sub}</h3>
+          </div>
         </section>
+
         <section className={styles.section_three_cards}>
-
+          {section_three_cards.map((para, index) => <div className={styles.card} key={index}>
+            <p className={styles.card_p}>{para}</p>
+          </div>)}
         </section>
+
         <section className={styles.section_auxillary}>
-
+          <div className={styles.aux_heads}>
+            <h1 className={styles.aux_h1}>{section_auxillary.heading}</h1>
+            <h3 className={styles.aux_h3}>{section_auxillary.sub}</h3>
+          </div>
         </section>
+
         <section className={styles.section_closing}>
 
         </section>
+
       </div>
 
     </>
