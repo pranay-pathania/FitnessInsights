@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import { homePageData } from '@/utils'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+import { SlArrowRight } from 'react-icons/sl'
 
 const Home: React.FC<{}> = () => {
 
-  const { section_main, section_three_cards, section_auxillary } = homePageData
+  const { section_main, section_three_cards, section_auxillary, section_closing } = homePageData
 
   return (
     <>
@@ -38,7 +40,20 @@ const Home: React.FC<{}> = () => {
         </section>
 
         <section className={styles.section_closing}>
+          <div className={styles.close_heads}>
+            <h1 className={styles.close_h1}>{section_closing.heading}</h1>
+            <h3 className={styles.close_h3}>{section_closing.sub}</h3>
+            <Link href="/explore" className={styles.section_close_button_link}>
+              <button className={styles.section_close_button}>
+                <p className={styles.button_text}>Explore</p>
+                <SlArrowRight />
+              </button>
+            </Link>
+          </div>
+        </section>
 
+        <section className={styles.disclaimer}>
+          <p className={styles.disclaimer_text}></p>
         </section>
 
       </div>

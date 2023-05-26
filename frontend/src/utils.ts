@@ -9,6 +9,10 @@ interface homePageDataInterface {
     section_auxillary: {
         heading: string,
         sub: string
+    },
+    section_closing: {
+        heading: string,
+        sub: string
     }
 }
 
@@ -18,13 +22,17 @@ export const homePageData: homePageDataInterface = {
         sub: "Because fitness is not as complicated as it's made to seem"
     },
     section_three_cards: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "I aim to provide accurate, evidence-based information on various aspects of fitness, including exercise, nutrition, wellness, and more. Whether you're a beginner looking to kickstart a healthy lifestyle or a seasoned fitness enthusiast seeking to deepen your understanding, I've got you covered. After all, knowledge is the key to unlocking your full potential on your fitness journey.",
+        "Dive into a wealth of easy-to-read guides designed to empower you on your fitness quest. From workout routines to dietary guidelines, I cover a wide range of topics to support your holistic well-being. I aim to break down complex concepts into accessible and actionable information. Whether you're interested in strength training, cardiovascular fitness, flexibility, or overall wellness, my content is tailored to meet your needs.",
+        "The fitness landscape can be overwhelming, with a flood of conflicting information and trends. That's why we need to separate fact from fiction, dispel myths, and provide trustworthy information you can rely on. You receive information that is not only practical but also aligned with the latest research in the field. Together, we can overcome challenges, celebrate milestones, and embark on a fulfilling journey towards improved fitness and well-being."
     ],
     section_auxillary: {
         heading: "Unlock Your Fitness Potential, One Fact at a Time",
         sub: "As cheesy as it sounds, knowledge is power indeed"
+    },
+    section_closing: {
+        heading: "Enough reading, let's get to work",
+        sub: "Click this lovely yellow button to start exploring all topics fitness"
     }
 }
 

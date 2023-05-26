@@ -7,12 +7,6 @@
 }
 
 
-.section_closing {
-    height: 75vh;
-    width: 100%;
-}
-
-
 
 
 
@@ -65,7 +59,7 @@
     max-width: 320px;
     background: #000000;
     border-radius: 20px;
-    min-height: 50vh;
+    height: 55vh;
     padding: 1em;
     display: flex;
     align-items: center;
@@ -125,11 +119,66 @@
 
 
 
-
+/* CLOSING SECTION */
 
 
 .section_closing {
-    background: #ffffff;
+    background: url('../../public/Images/Home-closing-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close_heads {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.close_h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.close_h3 {
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.section_close_button_link {
+    text-decoration: none;
+}
+
+.section_close_button {
+    margin-top: 0.5em;
+    border-color: transparent;
+    outline: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.35em 0.6em;
+    border-radius: 20px;
+    background: #f6f468;
+}
+
+.section_close_button:hover {
+    background: #f8f404;
+    cursor: pointer;
+}
+
+.section_close_button:active {
+    background: #aeac0f;
+}
+
+.button_text {
+    margin-right: 0.5em;
 }
 
 
@@ -141,6 +190,16 @@
     .section_main {
         background: url('../../public/Images/Home-main-bg-mobile.jpg');
         background-size: cover;
+    }
+    .section_closing {
+        background: url('../../public/Images/Home-closing-bg-mobile.jpg');
+        background-size: cover;
+    }
+    .close_h1 {
+        font-size: 2rem;
+    }
+    .close_h3 {
+        font-size: 1.5rem;
     }
 }
 
@@ -166,15 +225,18 @@
 
 /* three cards */
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1375px) {
     .card_p {
         font-size: 1.1rem;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
     .card {
         width: 27%;
+    }
+    .card_p {
+        font-size: 1.03rem;
     }
 }
 
@@ -187,5 +249,8 @@
         width: 60%;
         margin-bottom: 1em;
         min-height: 40vh;
+    }
+    .card_p {
+        font-size: 1.15rem;
     }
 }
