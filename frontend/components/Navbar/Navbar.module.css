@@ -39,6 +39,10 @@
     margin-left: 1em;
 }
 
+.logo_link {
+    text-decoration: none;
+}
+
 .logo_heading {
     font-size: 5rem;
     white-space: nowrap;

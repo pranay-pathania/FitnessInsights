@@ -13,6 +13,9 @@ interface homePageDataInterface {
     section_closing: {
         heading: string,
         sub: string
+    },
+    disclaimer: {
+        text: string
     }
 }
 
@@ -33,6 +36,9 @@ export const homePageData: homePageDataInterface = {
     section_closing: {
         heading: "Enough reading, let's get to work",
         sub: "Click this lovely yellow button to start exploring all topics fitness"
+    },
+    disclaimer: {
+        text: "Disclaimer: Remember to consult with a healthcare professional before making any significant changes to your fitness or diet regimen. Check for allergies and other issues before adopting new practices."
     }
 }
 

@@ -30,7 +30,7 @@ const Navbar: React.FC<{}> = () => {
     // this was a problem to implement through TS. needed to change event type from React.MouseEvent to native MouseEvent
     const clickOutsideMenuHandler = (event: MouseEvent) => {
       let menu = event.target as HTMLDivElement
-      if(!menuRef.current?.contains(menu)) {
+      if (!menuRef.current?.contains(menu)) {
         setIsMenuOpen(false)
       }
     }
@@ -47,7 +47,9 @@ const Navbar: React.FC<{}> = () => {
 
     {/* contains the brand logo */}
     <div className={styles.logo_div}>
-      <p className={styles.logo_heading}>FITNESS INSIGHTS</p>
+      <Link href="/" className={styles.logo_link}>
+        <p className={styles.logo_heading}>FITNESS INSIGHTS</p>
+      </Link>
     </div>
 
 
@@ -78,7 +80,7 @@ const Navbar: React.FC<{}> = () => {
               }
           `}</style>
       </div>
-      
+
       {/* toggle state of menu button */}
       <div className={styles.menu_expandable_button} onClick={toggleMenu}>
         {isMenuOpen ? <AiOutlineClose size='48' /> : <BiMenu size='48' />}

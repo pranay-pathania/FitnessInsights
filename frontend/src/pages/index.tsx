@@ -6,7 +6,7 @@ import { SlArrowRight } from 'react-icons/sl'
 
 const Home: React.FC<{}> = () => {
 
-  const { section_main, section_three_cards, section_auxillary, section_closing } = homePageData
+  const { section_main, section_three_cards, section_auxillary, section_closing, disclaimer } = homePageData
 
   return (
     <>
@@ -27,8 +27,8 @@ const Home: React.FC<{}> = () => {
         </section>
 
         <section className={styles.section_three_cards}>
-          {section_three_cards.map((para, index) => <div className={styles.card} key={index}>
-            <p className={styles.card_p}>{para}</p>
+          {section_three_cards.map((text, index) => <div className={styles.card} key={index}>
+            <p className={styles.card_p}>{text}</p>
           </div>)}
         </section>
 
@@ -53,7 +53,7 @@ const Home: React.FC<{}> = () => {
         </section>
 
         <section className={styles.disclaimer}>
-          <p className={styles.disclaimer_text}></p>
+          <p className={styles.disclaimer_text}>{disclaimer.text}</p>
         </section>
 
       </div>
