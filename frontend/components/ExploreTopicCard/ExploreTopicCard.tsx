@@ -9,8 +9,8 @@ interface ExploreTopicCardPropsInterface {
 
 const ExploreTopicCard: React.FC<ExploreTopicCardPropsInterface> = ({ topic_id, heading }: ExploreTopicCardPropsInterface) => {
 
-    return <div className={styles.link}>
-        <Link href={`/explore/${topic_id}`}>
+    return <div className={styles.link_body}>
+        <Link href={`/explore/${topic_id}`} className={styles.link}>
             <h1 className={styles.heading}>{heading}</h1>
         </Link>
     </div>

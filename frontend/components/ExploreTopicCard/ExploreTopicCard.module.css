@@ -1,5 +1,47 @@
-.link {
-    width: 25%;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.link_body {
+    width: 28%;
+    max-width: 400px;
+    height: 10vh;
     border-radius: 20px;
     background: #ffffff;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0em 0.5em
+}
+
+.link {
+    text-decoration: none;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+@media screen and (max-width: 900px) {
+    .heading {
+        font-size: 1.1rem;
+    }
+    .link_body {
+        width: 24%
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .heading {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .link_body {
+        width: 80%;
+        margin: 0.5em 0em;
+        padding: 1em 0.5em;
+    }
 }

@@ -104,6 +104,32 @@ export const miscellaneousExploreCard: ExploreCardInterface =  {
 export const img_sizes: string = '(max-width: 650px) 64vw, (max-width: 850px) 28.51vw, (max-width: 1350px) 24vw,  320px' 
 
 
+// EXPLORE TOPICS DATA
+export interface PathTextInterface {
+    heading: string,
+    sub_text: string
+}
+
+interface PathTextListInterface {
+    muscle_building: PathTextInterface,
+    fat_loss: PathTextInterface,
+    miscellaneous: PathTextInterface
+}
+
+export const PathTextList: PathTextListInterface = {
+    muscle_building: {
+        heading: "Muscle Building",
+        sub_text: "Learn about everything related to building muscle"
+    },
+    fat_loss: {
+        heading: "Fat Loss",
+        sub_text: "Learn about everything related to losing fat and keeping it off"
+    },
+    miscellaneous: {
+        heading: "Miscellaneous",
+        sub_text: "Explore miscellaneous topics fitness-related"
+    }
+}
 
 
 
