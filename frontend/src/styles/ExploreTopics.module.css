@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+/* main page background */
 .body {
     width: 100%;
     height: 85vh;
@@ -11,6 +12,8 @@
     align-items: center;
 }
 
+
+/* greeting text */
 .text_container {
     padding: 1em 0em;
 }
@@ -28,7 +31,7 @@
 
 
 
-
+/* contains topics related to the query */
 .topic_container {
     border-radius: 20px;
     background: #ffffff18;
@@ -46,6 +49,8 @@
 }
 
 
+
+/* .topic_container scroll bar details */
 .topic_container::-webkit-scrollbar {
     width: 2vw;
     /* for smaller widths */

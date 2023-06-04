@@ -1,3 +1,6 @@
+// this contains information to be displayed for each topic
+// will probably be served through api later on, no promises
+
 export interface ExploreTopicListItemInterface {
     topic_id: string,
     heading: string,

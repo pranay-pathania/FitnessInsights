@@ -7,6 +7,7 @@ interface ExploreTopicCardPropsInterface {
     heading: string
 }
 
+// returns a simple card element for each component of the topic list array
 const ExploreTopicCard: React.FC<ExploreTopicCardPropsInterface> = ({ topic_id, heading }: ExploreTopicCardPropsInterface) => {
 
     return <div className={styles.link_body}>
