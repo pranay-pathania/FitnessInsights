@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+.body {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2em 0em;
+}
+
+
+.textbox {
+    width: 70%;
+    max-width: 1000px;
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 1em;
+}
+
+
+.h1 {
+    font-size: 3rem;
+    margin: 0.5em 0em;
+    color: #ffffffc1;
+    text-align: center;
+}
+
+.p {
+    font-size: 1.5rem;
+    margin: 0.5em 0em;
+    color: #ffffffc1;
+}
+
+
+.linkbox {
+    width: 30%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ffffff73;
+}
+
+.link:hover {
+    color: #ffffffcc;
+    transition: color 0.2s ease-in;
+}
+
+.link:active {
+    color: #ffffff36;
+    transition: color 0.2s ease-in;
+}
+
+
+@media screen and (max-width:900px) {
+    .linkbox {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .body {
+        top: 2rem;
+    }
+    .textbox {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .body {
+        top: 1rem;
+    }
+    .h1 {
+        font-size: 2.5rem;
+    }
+    .p {
+        font-size: 1.3rem;
+    }
+}
