@@ -11,3 +11,6 @@
 
 ## Notes
 - I have no experience with the likes of Figma so all my designing was done on MS Paint
+
+## Side note
+The project has a gap of around 3 months. I sustained a shoulder injury which put me out for two weeks or so. The rest of the time was consumed with possibly clinical depression. Undiagnosed at the moment so not sure. Nevertheless, should be back on track shortly.
